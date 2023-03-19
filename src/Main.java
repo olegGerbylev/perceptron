@@ -37,7 +37,7 @@ public class Main {
         double[][] inputs = (double[][]) data[0];
         int[] rightDigits =(int[]) data[1];
         int right  = 0;
-        for (int c = 0; c < 12; c++) {
+        for (int c = 0; c < 10000; c++) {
             double[] outputs = nn.feedForward(inputs[c]);
             int maxDigit = 0;
             double maxDigitWeight = -1;
